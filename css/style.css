@@ -1,0 +1,234 @@
+/* css reset  */
+*{
+    padding:0px;
+    margin:0px;
+}
+/* css variables  */
+:root{
+    --navbar-height:56px;
+}
+body{
+    font-family: 'Baloo 2', cursive;
+}
+/* navigation bar  */
+
+#navbar{
+    display: flex;
+    position: sticky;
+    top:0;
+    border-radius: 5px;
+    font-family: 'Baloo 2', cursive;
+    background-color: black;
+    z-index:1;
+}
+#navbar > a{
+    text-decoration: none;
+}
+#logo{
+     /* background-color:#FF0000; */
+     color:red;
+     border-radius:6rem;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width:5vw;
+     cursor:default;
+     transition:all 1s ease-in-out;
+}
+#logo i{
+    font-size:1.5rem;
+}
+#logo p{
+    font-variant: small-caps;
+    text-decoration:overline;
+    text-decoration-color: white;
+    font-size:0.8rem;
+}
+#logo:hover{
+    transform: scale(1.2);
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar li a{
+    display: block;
+    text-decoration: none;
+    padding:0.5rem;
+    color:white;
+    transition: all 1s ease-in-out;
+    margin:0.5rem 1rem;
+}
+#navbar li a:hover{
+    background-color:#FF0000;
+    color:white;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+    color:white;
+    padding:0rem 20rem;
+    height: 100vh;
+    border-top: 2px solid #FF0000;
+}
+#home::before{
+    content:"";
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#welcome{
+    text-align: center;
+}
+#home h1{
+    
+}
+#home hr{
+    line-height: 0.4rem;
+    background-color: white;
+}
+#home i{
+    font-size:0.8rem;
+}
+#home p{
+    display: block;
+    text-align: center;
+    padding: 2rem;
+
+}
+.btn{
+    padding:1rem 2rem;
+    border:2px solid white;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius:1rem;
+    background-color: brown;
+    color:white;
+    margin:16px;
+    font-size: 1.5rem;
+    font-family: 'Baloo 2', cursive;
+    transition: all 1s ease-in-out;
+    cursor:pointer;
+}
+.btn:hover{
+     transform: rotateY(360deg);
+}
+/* services   container */
+.service-container{
+    background-color: #2b1e16;
+}
+#services{
+    display:flex;
+    margin:4rem 3rem 0rem 3rem;
+    position: relative;
+    /* border:2px solid blue; */
+}
+#services .box{
+    /* border:2px solid red; */
+    border-radius: 2rem;
+    color:white;
+    margin:0rem auto 1rem auto;
+    padding:1rem;
+    transition:all 1s ease-in-out;
+}
+#services .box:hover{
+   transform: scale(1.1);
+}
+#services .box img{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin:auto;
+}
+#services .box p{
+    font-size: 0.7rem;
+}
+/* deliveries city  */
+#deliveries{
+    background-color: black;
+}
+.cities{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+.citycol{
+    /* display: block; */
+    padding: 2rem 5rem; 
+}
+.citycol li a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Baloo 2', cursive;
+    transition: all 1s ease-in-out;
+
+}
+.citylink:hover{
+    text-decoration: underline;
+}
+/* developer */
+#developer{
+    background-color:#2C394B;
+    color:white;
+}
+#developer div{
+    display: flex;
+    /* border:2px solid black; */
+    justify-content: center;
+    align-items: center;
+}
+#developer div img{
+    height: 200px;
+    width:250px;
+    /* border:2px solid black; */
+   margin:2rem;
+   border-radius: 2rem;
+}
+#developer div p{
+    display: block;
+    padding:3rem;
+}
+
+/* contact us  */
+#contact{
+    background-color: black;
+}
+.icons{
+ display: flex;
+ margin: auto;
+ justify-content: center;
+ align-items: center;
+}
+.icons div{
+    margin:1rem;
+}
+.icons div img{
+    height: 2rem;
+}
+/* uitility classes  */
+.h-primary{
+    font-size: 2rem;
+    color:white;
+}
+.h-secondary{
+    font-size:2rem;
+}
+.center{
+    text-align: center;
+}
