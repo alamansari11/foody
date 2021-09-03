@@ -49,7 +49,7 @@
     border-top: 2px solid #FF0000;
 }
 
-/* #home::before{
+#home::before{
     content:"";
     background-image: url('../img/bg.jpg');
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@
     width: 100%;
     z-index: -1;
     opacity: 0.8;
-} */
+}
 #welcome{
     text-align: center;
 }
