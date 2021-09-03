@@ -4,7 +4,6 @@
     }
     /* navbar  */
     #navbar{
-      
     }
     #logo{
          width:1rem;
@@ -25,9 +24,15 @@
         font-size: 1rem;
     }
     #navbar li a{
-        padding:0.2rem;
-        margin:0.5rem 0.2rem;
+        padding:0rem;
+        margin:0.2rem 0.5rem 0.1 0.5rem;
         transition: none;
+    }
+    #navbar li a:hover{
+        background-color:#FF0000;
+        color:white;
+        border-top-right-radius: 0.8rem;
+        border-bottom-left-radius: 0.8remrem;
     }
  /* home section  */
  #home{
@@ -137,10 +142,10 @@
     align-items: center;
 }
 #developer div img{
-    height: 100px;
-    width:100px;
+    height: 150px;
+    width:150px;
     /* border:2px solid black; */
-   margin:2rem;
+   margin:1rem;
    border-radius: 2rem;
 }
 #developer div p{
